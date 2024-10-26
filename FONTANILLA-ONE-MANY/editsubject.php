@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-	<div class="return"><a href="viewsubjects.php?student_id=<?php echo $_GET['student_id']; ?>">View The Subjects</a></div>
+	
 	<h1>Edit the Subject!</h1>
 	<?php $getProjectByID = getSubjectByID($pdo, $_GET['subject_id']); ?>
 	<form action="core/handleForms.php?subject_id=<?php echo $_GET['subject_id']; ?>
@@ -26,5 +26,6 @@
 		</p>
 		<input type="submit" name="editSubjectBtn" value="submit">
 	</form>
+	<div class="return"><a href="viewsubjects.php?student_id=<?php echo $_GET['student_id']; ?>">View The Subjects</a></div>
 </body>
 </html>

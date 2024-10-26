@@ -9,7 +9,6 @@
 	<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-	<div class="return"><a href="index.php">Return to home</a></div>
 	<?php $getStudentByID = getStudentByID($pdo, $_GET['student_id']); ?>
 	<h1>Username: <?php echo $getStudentByID['username']; ?>
 	<h1>Add New Subject</h1>
@@ -24,7 +23,7 @@
 		</p>
 		<input type="submit" name="insertNewSubjectBtn">
 	</form>
-
+	<div class="return"><a href="index.php">Return to home</a></div>
 	<table style="width:100%; margin-top: 50px;">
 	  <tr>
 	    <th>Subject ID</th>
