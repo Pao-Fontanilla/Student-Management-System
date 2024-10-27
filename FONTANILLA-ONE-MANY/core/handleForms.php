@@ -65,7 +65,7 @@ if (isset($_POST['insertNewSubjectBtn'])) {
 
 
 if (isset($_POST['editSubjectBtn'])) {
-	$query = updateSubject($pdo, $_POST['subjectName'], $_POST['instructor'], $_GET['student_id']);
+	$query = updateSubject($pdo, $_POST['subjectName'], $_POST['instructor'], $_GET['subject_id']);
 
 	if ($query) {
 		header("Location: ../viewsubjects.php?student_id=" .$_GET['student_id']);
